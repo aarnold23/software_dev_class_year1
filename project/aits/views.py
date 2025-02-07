@@ -17,6 +17,8 @@ class ReactView(APIView):
         for detail in User.objects.all()]
         return Response(detail)
 
+
+
     def post(self, request):
 
         serializer = ReactSerializer(data=request.data)
